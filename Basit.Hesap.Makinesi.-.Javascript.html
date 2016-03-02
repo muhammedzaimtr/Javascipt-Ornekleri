@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JAVASCRİPT BASİT HESAP MAKİNESİ - MUHAMMED ZAİM </title>
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+function toplama(){
+	var sayi1 = Number(document.getElementById('sayi1').value);
+	var sayi2 = Number(document.getElementById('sayi2').value);
+	document.getElementById('sonuc').value=sayi1+sayi2
+	}
+	
+function cikarma(){
+	var sayi1 = Number(document.getElementById('sayi1').value);
+	var sayi2 = Number(document.getElementById('sayi2').value);
+	document.getElementById('sonuc').value=sayi1-sayi2
+	}
+	
+function carpma(){
+	var sayi1 = Number(document.getElementById('sayi1').value);
+	var sayi2 = Number(document.getElementById('sayi2').value);
+	document.getElementById('sonuc').value=sayi1*sayi2
+	}
+	
+function bolme(){
+	var sayi1 = Number(document.getElementById('sayi1').value);
+	var sayi2 = Number(document.getElementById('sayi2').value);
+	document.getElementById('sonuc').value=sayi1/sayi2
+	}
+
+</script>
+
+SAYİ 1: <input type="text" id="sayi1"/><br /><br />
+SAYİ 2: <input type="text" id="sayi2" /><br /><br />
+
+
+<input value="+" onclick="toplama()" type="button" id="toplama"/>
+<input value="-" onclick="cikarma()" type="button" id="cikarma" />
+<input value="*" onclick="carpma()" type="button" id="carpma"/>
+<input value="/" onclick="bolme()" type="button" id="bolme"/><br /><br />
+Sonuc: <input type="text" id="sonuc" />
+</body>
+</html>
